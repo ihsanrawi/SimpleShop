@@ -1,0 +1,27 @@
+﻿@if (Context.User.Identity.IsAuthenticated)
+{
+    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <form asp-area="Identity" asp-page="/Account/Logout" method="post" id="logoutForm" class="navbar-right">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <div class="nav-link text-muted text-uppercase">@Context.User.Identity.Name</div>
+                </li>
+                <li>
+                    <a class="nav-link btn btn-block" href="javascript:document.getElementById('logoutForm').submit()"><div>Log Out</div></a>
+                </li>
+            </ul>
+        </form>
+    </div>
+}
+else
+{
+    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <form asp-area="Identity" asp-page="/Account/Logout" method="post" id="logoutForm" class="navbar-right">
+            <ul class="navbar-nav flex-grow-1">
+                <li>
+                    <a class="nav-link btn btn-block" asp-area="Identity" asp-page="/Account/Login"><div>Login</div></a>
+                </li>
+            </ul>
+        </form>
+    </div>
+}

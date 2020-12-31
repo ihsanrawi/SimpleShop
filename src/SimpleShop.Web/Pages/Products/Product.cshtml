@@ -1,0 +1,23 @@
+@page "{id}"
+@model ProductModel
+
+<form method="post">
+  <div class="form-row">
+    <div class="form-group col-md-9">
+      <label for="inputProductName">Product Name</label>
+      <input type="text" class="form-control" id="inputProductName" asp-for="Product.Name">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputPrice">Price</label>
+      <input type="number" step=".01" class="form-control" id="inputPrice" asp-for="Product.Price">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputDescription">Description</label>
+    <input type="text" class="form-control" id="inputDescription" placeholder="Product Description Here" asp-for="Product.Description">
+  </div>
+  <div class="row justify-content-between px-3">
+    <button class="btn btn-danger" asp-page-handler="Delete" type="submit">Delete</button>
+    <button type="submit" class="btn btn-primary" asp-page-handler="Update">Update</button>
+  </div>
+</form>
