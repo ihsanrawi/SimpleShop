@@ -37,3 +37,4 @@ dotnet run
 ```
 These commands will create two separate databases, one for the product data and one for the app's user credentials and identity data. 
 It will then run the application.
+4. Open <[https://localhost:5001](https://localhost:5001)> in browser for back office application. You can login using **admin** or **manager** user. Both user password is **password**.
