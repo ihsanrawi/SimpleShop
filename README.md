@@ -20,10 +20,7 @@ There's Swagger endpoint that can be view at [https://localhost:5001/swagger](ht
 
 ## Run
 
-<details>
-<summary>Command Line</summary>
-
-#### Steps
+### Steps
 
 1. Open directory **web-client** in command line and execute **yarn** and **yarn start**.
 2. Open <[http://localhost:3000](http://localhost:3000)> in browser.
