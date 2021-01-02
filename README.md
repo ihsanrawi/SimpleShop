@@ -24,7 +24,7 @@ There's Swagger endpoint that can be view at [https://localhost:5001/swagger](ht
 
 1. Open directory **web-client** in command line and execute **yarn** and **yarn start**.
 2. Open <[http://localhost:3000](http://localhost:3000)> in browser.
-3. Open a command prompt in the src\SimpleShop.Web directory and execute the following commands:
+3. Open a command prompt in the **src\SimpleShop.Web** directory and execute the following commands:
 ```
 dotnet restore
 dotnet tool restore
